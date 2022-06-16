@@ -10,137 +10,177 @@
     <title>İletişim</title>
 </head>
 
-<body class="h-screen w-full">
-    <!-- Kırmızı Banner -->
-    <div class="w-full h-12 bg-red-600 flex flex-row items-center justify-center">
-        <div class="w-2/3 flex flex-row items-center justify-between">
-            <div class="flex flex-row gap-x-5">
+<body>
+    <div class="h-screen w-full ">
+        <!-- Kırmızı Banner -->
+        <div class="w-full h-8 bg-red-600 flex flex-row items-center justify-center">
+            <div class="w-2/3 flex flex-row items-center justify-end">
+                <div class="flex flex-row gap-x-5">
 
-                <div class="flex flex-row justify-center items-center gap-x-3">
-                    <i class="fa-solid fa-envelope text-white"></i>
-                    <p class="text-white text-sm">E-mail: support@tricore.com</p>
-                </div>
+                    <div class="flex flex-row justify-center items-center gap-x-3">
+                        <i class="fa-solid fa-envelope text-white text-xs"></i>
+                        <p class="text-white text-[0.65rem]">E-mail: support@tricore.com</p>
+                    </div>
 
-                <div class="flex flex-row justify-center items-center gap-x-3">
-                    <i class="fa-solid fa-phone text-white"></i>
-                    <p class="text-white text-sm">Call us: (+84)23456789</p>
-                </div>
-            </div>
-        </div>
-
-    </div>
-
-    <!-- Navbar -->
-    <div class="w-full h-28 flex flex-row items-center justify-center">
-        <div class="w-2/3 h-full flex flex-row items-center justify-between">
-
-            <!-- resim -->
-            <div class="">
-                <img src="/assets/logo.jpg" alt="" class="h-28">
-            </div>
-
-            <!-- liste -->
-            <div class="flex flex-row gap-x-8">
-                <a href="index.html" class="text-base text-gray-700 hover:font-semibold active:underline hover:underline decoration-blue-500 decoration-3 underline-offset-[15px]">Anasayfa</a>
-                <a href="kurumsal.html" class="text-base text-gray-700 hover:font-semibold active:underline hover:underline decoration-red-600 decoration-3 underline-offset-[15px]">Kurumsal</a>
-                <a href="urunler.html" class="text-base text-gray-700 hover:font-semibold active:underline hover:underline decoration-green-500 decoration-3 underline-offset-[15px]">Ürünler</a>
-                <a href="talep-form.html" class="text-base text-gray-700 hover:font-semibold active:underline hover:underline decoration-orange-600 decoration-3 underline-offset-[15px]">TalepFormu</a>
-                <a href="iletisim.html" class="text-base text-gray-700 font-semibold underline decoration-orange-400 decoration-3 underline-offset-[15px]">İletişim</a>
-            </div>
-
-        </div>
-    </div>
-
-    <!-- Giriş Görseli -->
-    <div class="giris w-full h-72 flex flex-col justify-center">/
-        <div class="flex flex-row items-center justify-center">
-            <p class="text-white text-4xl">İletişim</p>
-        </div>
-    </div>
-
-    <div class="w-full h-72">
-        <iframe class="w-full h-full" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12057.98922463857!2d29.31442!3d40.9267668!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x234962a227e1b90d!2sYakatechPro%20Bilgi%20Sistemleri!5e0!3m2!1str!2str!4v1655212271076!5m2!1str!2str"
-            style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
-
-    <!-- FORMS -->
-    <div class="w-full h-auto flex flex-col items-center mt-10  text-xs">
-        <div class="w-1/2 h-auto flex flex-row items center justify center gap-x-5 mt-5">
-            <input type="text" placeholder="First Name*" class="w-1/2 h-10 border-2 border-gray-300 px-1">
-            <input type="text" placeholder="Company Name*" class="w-1/2 h-10 border-2 border-gray-300 px-1">
-        </div>
-        <div class="w-1/2 h-auto flex flex-row  gap-x-5 mt-5">
-            <input type="text" placeholder="Last Name*" class="w-1/2 h-10 border-2 border-gray-300 px-1">
-            <input type="text" placeholder="E-mail*" class="w-1/2 h-10 border-2 border-gray-300 px-1">
-        </div>
-        <div class="w-1/2 h-auto flex flex-row mt-5">
-            <!-- <input type="text" placeholder="Message*" class="w-full h-40 border-2 border-gray-300"> -->
-            <textarea placeholder="Message*" class="w-full h-40 border-2 border-gray-300 px-1"></textarea>
-        </div>
-        <div class="mb-5">
-            <button class="border-2 border-blue-500 rounded-xl text-blue-500 font-semibold px-5 py-1 mt-5 shadow shadow-gray-400">Send</button>
-        </div>
-    </div>
-    <!-- Footer  -->
-    <div class="w-full h-auto bg-red-600 flex flex-row items-center justify-center px-10 text-sm py-2">
-
-        <!-- About Us -->
-        <div class="w-1/3 flex flex-col px-10">
-            <a class="text-lg text-white hover:font-semibold active:underline hover:underline decoration-white decoration-4 underline-offset-[15px] mb-3" href="">About Us</a>
-            <p class="text-white mt-6 text-xs">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci magni distinctio quibusdam voluptates quidem magnam, debitis cumque!</p>
-            <div class="flex flex-col">
-                <div class="flex flex-row justify-start items-center text-white gap-x-3 mt-5">
-                    <i class="fa-solid fa-phone text-white"></i>
-                    <p class="text-white text-sm">Call us: (+84)23456789</p>
-                    <i class="fa-solid fa-envelope text-white"></i>
-                    <p class="text-white text-sm">E-mail: support@tricore.com</p>
-                </div>
-                <div class="flex flex-row justify-start items-center mt-5">
-                    <button class="mt-2 border border-orange-500 bg-orange-500 rounded-full py-1 px-4 text-white">Read More</button>
+                    <div class="flex flex-row justify-center items-center gap-x-3">
+                        <i class="fa-solid fa-phone text-white text-xs"></i>
+                        <p class="text-white text-[0.65rem]">Call us: (+84)23456789</p>
+                    </div>
                 </div>
             </div>
         </div>
 
-        <!-- Quick Links -->
-        <div class="w-1/3 flex flex-col px-10">
-            <a class="text-lg text-white hover:font-semibold active:underline hover:underline decoration-white decoration-4 underline-offset-[15px] " href="">Quick Links</a>
-            <div class="flex flex-row py-9">
-                <ul class="list-disc text-white">
-                    <li><a href=""> Home</a></li>
-                    <li><a href="">About Us</a></li>
-                    <li><a href="">Portfolio</a></li>
-                    <li><a href="">Service</a></li>
-                    <li><a href="">Team</a></li>
-                </ul>
-                <ul class="list-disc text-white px-9">
-                    <li><a href="">Price</a></li>
-                    <li><a href="">Clients</a></li>
-                    <li><a href="">Blog</a></li>
-                    <li><a href="">Contact Us</a></li>
-                </ul>
+        <!-- Navbar -->
+        <div class="w-full h-20 flex flex-row items-center justify-center">
+            <div class="w-2/3 h-full flex flex-row items-center justify-between">
+
+                <!-- resim -->
+                <div class="">
+                    <img src="/assets/logo.png" alt="" class="h-20">
+                </div>
+
+                <!-- liste -->
+                <div class="flex flex-row gap-x-8">
+                    <!-- <a href="index.html" class="text-base text-gray-700 hover:font-semibold active:underline hover:underline decoration-red-600 decoration-3 underline-offset-[15px]">Anasayfa</a> -->
+                    <!-- Başlık -->
+                    <div class="group flex flex-col gap-y-2">
+                        <a href="index.html" class="text-sm text-black hover:font-semibold">Anasayfa</a>
+                        <div class="w-[90%] h-[1px] pl-2 pr-1">
+                            <div class="w-full h-full rounded-full bg-transparent  group-hover:bg-orange-400 "></div>
+                        </div>
+                    </div>
+                    <!-- <a href="kurumsal.html" class="text-base text-gray-700 font-semibold underline decoration-orange-400 decoration-3 underline-offset-[15px]">Kurumsal</a> -->
+                    <!-- Başlık -->
+                    <div class="group flex flex-col gap-y-2">
+                        <a href="kurumsal.html" class="text-sm text-black hover:font-semibold">Kurumsal</a>
+                        <div class="w-[90%] h-[1px] pl-2 ">
+                            <div class="w-full h-full rounded-full bg-transparent  group-hover:bg-red-600 "></div>
+                        </div>
+                    </div>
+                    <!-- <a href="urunler.html" class="text-base text-gray-700 hover:font-semibold active:underline hover:underline decoration-green-500 decoration-3 underline-offset-[15px]">Ürünler</a> -->
+                    <!-- Başlık -->
+                    <div class="group flex flex-col gap-y-2">
+                        <a href="urunler.html" class="text-sm text-black hover:font-semibold">Ürünler</a>
+                        <div class="w-[90%] h-[1px] pl-2 ">
+                            <div class="w-full h-full rounded-full bg-transparent  group-hover:bg-green-500 "></div>
+                        </div>
+                    </div>
+                    <!-- <a href="talep-form.html" class="text-base text-gray-700 font-semibold underline decoration-orange-400 decoration-3 underline-offset-[15px]">Talep Formu</a> -->
+                    <!-- Başlık -->
+                    <div class="group flex flex-col gap-y-2">
+                        <a href="talep-form.html" class="text-sm text-black hover:font-semibold">Talep Formu</a>
+                        <div class="w-[90%] h-[1px] pl-2 ">
+                            <div class="w-full h-full rounded-full bg-transparent  group-hover:bg-orange-600 "></div>
+                        </div>
+                    </div>
+                    <!-- <a href="iletisim.html" class="text-base text-gray-700 font-semibold underline decoration-orange-400 decoration-3 underline-offset-[15px]">İletişim</a> -->
+                    <!-- Başlık -->
+                    <div class="group flex flex-col gap-y-2">
+                        <a href="iletisim.html" class="text-sm text-black font-semibold">İletişim</a>
+                        <div class="w-[90%] h-[1px] pl-2 ">
+                            <div class="w-full h-full rounded-full bg-transparent  bg-blue-500 "></div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
 
-        <!-- Follow Us -->
-        <div class="w-1/3 flex flex-col pb-10 py-5">
-            <a class="text-lg text-white hover:font-semibold active:underline hover:underline decoration-white decoration-4 underline-offset-[15px]" href="">Follow Us</a>
-            <div class="flex flex-row justify-start items-center text-white gap-x-3 mt-6">
-                <i class="fa-brands fa-facebook-f"></i>
-                <a href="">Facebook</a>
+        <!-- Giriş Görseli -->
+        <div class="giris w-full h-72 flex flex-col justify-center">/
+            <div class="flex flex-row items-center justify-center">
+                <p class="text-white text-4xl">İletişim</p>
             </div>
-            <div class="flex flex-row justify-start items-center text-white gap-x-3 mt-4">
-                <i class="fa-brands fa-twitter"></i>
-                <a href="">Twitter</a>
+        </div>
+
+        <!-- Harita -->
+        <div class="w-full h-[345px]">
+            <iframe class="w-full h-full" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12057.98922463857!2d29.31442!3d40.9267668!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x234962a227e1b90d!2sYakatechPro%20Bilgi%20Sistemleri!5e0!3m2!1str!2str!4v1655212271076!5m2!1str!2str"
+                style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <!-- Adres - Tel - E-mail -->
+        <div class="w-full h-44 flex flex-row justify-center ">
+            <div class="w-60 h-full flex flex-col items-center justify-center">
+                <i class="fa-solid fa-location-dot text-orange-500 py-3"></i>
+                <p class=" text-xs">4235 Stanley Avenue</p>
+                <p class=" text-xs">NY, New York</p>
             </div>
-            <div class="flex flex-row justify-start items-center text-white gap-x-3 mt-4">
-                <i class="fa-brands fa-google-plus-g"></i>
-                <a href="">Google</a>
+            <div class="w-60 h-full flex flex-col items-center justify-center">
+                <i class="fa-solid fa-phone text-orange-500  py-3"></i>
+                <p class="text-xs">(+88) 972-458-5130</p>
+                <p class=" text-xs">(+88) 965-753-6812</p>
+            </div>
+            <div class="w-60 h-full flex flex-col items-center justify-center">
+                <i class="fa-solid fa-envelope text-orange-500 py-3"></i>
+                <p class="text-xs">info@tricore.com</p>
+                <p class="text-xs">support@tricore.com</p>
+            </div>
+        </div>
+
+        <!-- FORMS -->
+        <div class="w-full h-96 flex flex-col items-center text-xs">
+            <div class="w-1/2 h-auto flex flex-row items center justify center gap-x-5 mt-5">
+                <input type="text" placeholder="First Name*" class="w-1/2 h-10 border-2 border-gray-300 px-1">
+                <input type="text" placeholder="Company Name*" class="w-1/2 h-10 border-2 border-gray-300 px-1">
+            </div>
+            <div class="w-1/2 h-auto flex flex-row  gap-x-5 mt-5">
+                <input type="text" placeholder="Last Name*" class="w-1/2 h-10 border-2 border-gray-300 px-1">
+                <input type="text" placeholder="E-mail*" class="w-1/2 h-10 border-2 border-gray-300 px-1">
+            </div>
+            <div class="w-1/2 h-auto flex flex-row mt-5">
+                <!-- <input type="text" placeholder="Message*" class="w-full h-40 border-2 border-gray-300"> -->
+                <textarea placeholder="Message*" class="w-full h-40 border-2 border-gray-300 px-1"></textarea>
+            </div>
+            <div class="mb-5">
+                <button class="border-2 border-blue-500 rounded-xl text-blue-500 font-semibold px-5 py-1 mt-5 shadow shadow-gray-400">Send</button>
+            </div>
+        </div>
+        <!-- Footer -->
+        <div class="footer h-[28%] bg-logo-secondary flex flex-row py-5 justify-center bg-red-600">
+
+            <div class="w-[25%] flex flex-col">
+                <img class="beyaz-logo w-2/5" src="/assets/logo.png" alt="">
 
             </div>
-            <div class="flex flex-row justify-start items-center text-white gap-x-3 mt-4">
-                <i class="fa-brands fa-instagram"></i>
-                <a href="">İnstagram</a>
+
+            <div class="w-1/6 flex flex-col gap-y-5">
+                <h6 class="font-semibold text-white text-lg">Servisler</h6>
+
+                <div class="flex flex-col gap-y-2">
+                    <p class="text-gray-300 text-xs">7/24 Destek</p>
+                    <p class="text-gray-300 text-xs">Danışmanlarımız</p>
+                    <p class="text-gray-300 text-xs">Hakkımızda</p>
+                    <p class="text-gray-300 text-xs">İletişim</p>
+                </div>
             </div>
+
+            <div class="w-1/6 flex flex-col gap-y-5">
+                <h6 class="font-semibold text-white text-lg">Bağlantılar </h6>
+
+                <div class="flex flex-col gap-y-2">
+                    <p class="text-gray-300 text-xs">Anasayfa</p>
+                    <p class="text-gray-300 text-xs">Hakkımzıda</p>
+                    <p class="text-gray-300 text-xs">Hizmetler</p>
+                    <p class="text-gray-300 text-xs">Ürünler</p>
+                    <p class="text-gray-300 text-xs">İletişim</p>
+                </div>
+            </div>
+
+            <div class="w-1/5 flex flex-col gap-y-5">
+                <h6 class="font-semibold text-white text-lg">Subscribe</h6>
+
+                <div class="flex flex-col gap-y-2">
+                    <input type="text" value="Name" class="h-10 w-full px-2 bg-transparent rounded-2xl border-2 border-logo-primary text-xs text-white">
+
+                    <input type="text" value="Mail" class="h-10 w-full px-2 bg-transparent rounded-2xl border-2 border-logo-primary text-xs text-white">
+
+                    <button class="ml-auto w-32 px-4 py-1 text-white text-base bg-logo-primary rounded-xl transition duration-300 hover:bg-white/30">
+                    Gönder
+                </button>
+                </div>
+            </div>
+
         </div>
     </div>
 
