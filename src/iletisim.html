@@ -5,16 +5,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/dist/output.css">
+    <link rel="stylesheet" href="../dist/output.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <title>İletişim</title>
 </head>
 
 <body>
     <div class="h-screen w-full ">
+
         <!-- Kırmızı Banner -->
-        <div class="w-full h-8 bg-red-600 flex flex-row items-center justify-center">
-            <div class="w-2/3 flex flex-row items-center justify-end">
+        <div class="w-full h-8 bg-red-600 flex flex-row items-center justify-center px-10 xl:px-0">
+            <div class="w-full xl:w-2/3 flex flex-row items-center xl:justify-end">
                 <div class="flex flex-row gap-x-5">
 
                     <div class="flex flex-row justify-center items-center gap-x-3">
@@ -31,12 +32,12 @@
         </div>
 
         <!-- Navbar -->
-        <div class="w-full h-20 flex flex-row items-center justify-center">
-            <div class="w-2/3 h-full flex flex-row items-center justify-between">
+        <div class="w-full h-20 flex flex-row items-center justify-center ">
+            <div class="w-2/3 h-full hidden xl:flex flex-row items-center justify-between">
 
                 <!-- resim -->
                 <div class="">
-                    <img src="/assets/logo.png" alt="" class="h-20">
+                    <img src="../assets/logo.png" alt="" class="h-20">
                 </div>
 
                 <!-- liste -->
@@ -83,6 +84,44 @@
                     </div>
                 </div>
 
+            </div>
+
+            <!-- Mobile Navbar -->
+            <div class="
+            mobile-navbar flex flex-row w-full h-fit items-center px-4 py-6
+            xl:hidden
+            ">
+
+                <img class="h-20 " src="../assets/logo.png" alt="">
+
+                <button class="mt-5 flex flex-col items-end justify-start gap-y-2 h-11 w-11 ml-auto rounded-xl group">
+                    <span class="h-[3px] w-2/3 bg-red-500 rounded-full"></span>
+                    <span class="h-[3px] w-2/3 bg-red-500 rounded-full"></span>
+                    <span class="h-[3px] w-2/3 bg-red-500 rounded-full"></span>
+
+                    <div class="w-32 mt-10 h-fit absolute hidden group-hover:flex flex-col">
+                        <div class="w-full h-fit px-2 py-2 bg-red-500 rounded-t-lg">
+                            <a href="index.html" class="text-white">Anasayfa</a>
+                        </div>
+
+                        <div class="w-full h-fit px-2 py-2 bg-red-500">
+                            <a href="kurumsal.html" class="text-white">Kurumsal</a>
+                        </div>
+
+                        <div class="w-full h-fit px-2 py-2 bg-red-500">
+                            <a href="urunler.html" class="text-white">Ürünler</a>
+                        </div>
+
+                        <div class="w-full h-fit px-2 py-2 bg-red-500">
+                            <a href="talep-form.html" class="text-white">Talep Formu</a>
+                        </div>
+
+                        <div class="w-full h-fit px-2 py-2 bg-red-500 rounded-b-lg">
+                            <a href="iletisim.html" class="text-white">İletişim</p>
+                        </div>
+
+                    </div>
+                </button>
             </div>
         </div>
 
@@ -206,12 +245,6 @@
                 }, false);
         </script>
 
-
-
-
-
-
-
         <!-- FORMS -->
         <div class="w-full h-96 flex flex-col items-center text-xs mt-3">
             <div class="w-1/2 h-auto flex flex-row items center justify center gap-x-5 mt-5">
@@ -230,52 +263,60 @@
                 <button class="border-2 border-blue-500 rounded-xl text-blue-500 font-semibold px-5 py-1 mt-5 shadow shadow-gray-400">Send</button>
             </div>
         </div>
+
+
         <!-- Footer -->
-        <div class="footer h-[28%] bg-logo-secondary flex flex-row py-5 justify-center bg-red-600">
+        <div class="footer h-fit xl:h-1/3 bg-red-600 flex flex-col gap-y-10 px-10 xl:px-20 xl:flex-row xl:gap-y-0 py-10 justify-center mt-10 xl:mt-0">
 
-            <div class="w-[25%] flex flex-col">
-                <img class="beyaz-logo w-2/5" src="/assets/logo.png" alt="">
+            <div class="w-full xl:w-2/6 flex flex-row xl:flex-col  gap-x-4">
+                <img class="beyaz-logo w-2/5  xl:w-1/5" src="../assets/logo.png" alt="">
 
+                <h6 class="text-white italic text-[1em] w-3/5">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis illo ab suscipit repellendus asperiores nostrum nam vero eum optio odit?</h6>
             </div>
 
-            <div class="w-1/6 flex flex-col gap-y-5">
-                <h6 class="font-semibold text-white text-lg">Servisler</h6>
 
-                <div class="flex flex-col gap-y-2">
-                    <p class="text-white text-xs">7/24 Destek</p>
-                    <p class="text-white text-xs">Danışmanlarımız</p>
-                    <p class="text-white text-xs">Hakkımızda</p>
-                    <p class="text-white text-xs">İletişim</p>
+            <div class="flex flex-row w-full xl:w-1/3 justify-between xl:justify-start pl-4">
+
+                <div class="w-full flex flex-col gap-y-8">
+                    <h6 class="font-semibold text-white text-2xl">Servisler</h6>
+
+                    <div class="flex flex-col gap-y-2">
+                        <p class="text-white">7/24 Destek</p>
+                        <p class="text-white">Danışmanlarımız</p>
+                        <p class="text-white">Hakkımızda</p>
+                        <p class="text-white">İletişim</p>
+                    </div>
+                </div>
+
+                <div class="w-full flex flex-col gap-y-8">
+                    <h6 class="font-semibold text-white text-2xl">Bağlantılar </h6>
+
+                    <div class="flex flex-col gap-y-2">
+                        <p class="text-white">Anasayfa</p>
+                        <p class="text-white">Kurumsal</p>
+                        <p class="text-white">Ürünler</p>
+                        <p class="text-white">Talep Formu</p>
+                        <p class="text-white">İletişim</p>
+                    </div>
                 </div>
             </div>
 
-            <div class="w-1/6 flex flex-col gap-y-5">
-                <h6 class="font-semibold text-white text-lg">Bağlantılar </h6>
+            <div class="w-full xl:w-1/5 flex flex-col gap-y-8">
+                <h6 class="font-semibold text-white text-2xl">Subscribe</h6>
 
-                <div class="flex flex-col gap-y-2">
-                    <p class="text-white text-xs">Anasayfa</p>
-                    <p class="text-white text-xs">Hakkımzıda</p>
-                    <p class="text-white text-xs">Hizmetler</p>
-                    <p class="text-white text-xs">Ürünler</p>
-                    <p class="text-white text-xs">İletişim</p>
-                </div>
-            </div>
+                <div class="flex flex-col gap-y-2 text-white">
+                    <input type="text" placeholder="Name" class="h-10 w-full px-2 bg-transparent rounded-2xl border-2 outline-none focus:bg-gray-100/50">
 
-            <div class="w-1/5 flex flex-col gap-y-5">
-                <h6 class="font-semibold text-white text-lg">Subscribe</h6>
+                    <input type="text" placeholder="Mail" class="h-10 w-full px-2 bg-transparent rounded-2xl border-2 outline-none focus:bg-gray-100/50">
 
-                <div class="flex flex-col gap-y-2">
-                    <input type="text" value="Name" class="h-10 w-full px-2 bg-transparent rounded-2xl border-2 border-logo-primary text-xs text-white">
-
-                    <input type="text" value="Mail" class="h-10 w-full px-2 bg-transparent rounded-2xl border-2 border-logo-primary text-xs text-white">
-
-                    <button class="ml-auto w-32 px-4 py-1 border-2 text-white text-base bg-logo-primary rounded-2xl transition duration-300 hover:bg-white/30">
-                    Gönder
-                </button>
+                    <button class="border-2 border-white ml-auto w-32 px-4 py-1 text-white text-base bg-logo-primary rounded-xl transition duration-300 hover:bg-white/30">
+                Gönder
+            </button>
                 </div>
             </div>
 
         </div>
+
     </div>
 
 

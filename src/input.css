@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 .giris {
-    background-image: url("/assets/young-designer.jpg");
+    background-image: url("../assets/young-designer.jpg");
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -35,4 +35,8 @@ textarea {
 
 .beyaz-logo {
     filter: brightness(0) invert(1);
+}
+
+input::placeholder {
+    color: white;
 }

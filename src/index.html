@@ -5,17 +5,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/dist/output.css">
+    <link rel="stylesheet" href="../dist/output.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
     <title>Ülker Boya</title>
 </head>
 
 <body>
-    <div class="h-screen w-full ">
+
+    <div class="h-screen w-full">
 
         <!-- Kırmızı Banner -->
-        <div class="w-full h-8 bg-red-600 flex flex-row items-center justify-center">
-            <div class="w-2/3 flex flex-row items-center justify-end">
+        <div class="w-full h-8 bg-red-600 flex flex-row items-center justify-center px-10 xl:px-0">
+            <div class="w-full xl:w-2/3 flex flex-row items-center xl:justify-end">
                 <div class="flex flex-row gap-x-5">
 
                     <div class="flex flex-row justify-center items-center gap-x-3">
@@ -33,11 +35,12 @@
 
         <!-- Navbar -->
         <div class="w-full h-20 flex flex-row items-center justify-center">
-            <div class="w-2/3 h-full flex flex-row items-center justify-between">
+            <!-- Desktop Navbar -->
+            <div class="w-2/3 h-full hidden xl:flex flex-row items-center justify-between">
 
                 <!-- resim -->
                 <div class="">
-                    <img src="/assets/logo.png" alt="" class="h-20">
+                    <img src="../assets/logo.png" alt="" class="h-20">
                 </div>
 
                 <!-- liste -->
@@ -85,24 +88,56 @@
                 </div>
 
             </div>
+
+            <!-- Mobile Navbar -->
+            <div class="
+            mobile-navbar flex flex-row w-full h-fit items-center px-4 py-6
+            xl:hidden
+            ">
+
+                <img class="h-20 " src="../assets/logo.png" alt="">
+
+                <button class="mt-5 flex flex-col items-end justify-start gap-y-2 h-11 w-11 ml-auto rounded-xl group">
+                    <span class="h-[3px] w-2/3 bg-red-500 rounded-full"></span>
+                    <span class="h-[3px] w-2/3 bg-red-500 rounded-full"></span>
+                    <span class="h-[3px] w-2/3 bg-red-500 rounded-full"></span>
+
+                    <div class="w-32 mt-10 h-fit absolute hidden group-hover:flex flex-col">
+                        <div class="w-full h-fit px-2 py-2 bg-red-500 rounded-t-lg">
+                            <a href="index.html" class="text-white">Anasayfa</a>
+                        </div>
+
+                        <div class="w-full h-fit px-2 py-2 bg-red-500">
+                            <a href="kurumsal.html" class="text-white">Kurumsal</a>
+                        </div>
+
+                        <div class="w-full h-fit px-2 py-2 bg-red-500">
+                            <a href="urunler.html" class="text-white">Ürünler</a>
+                        </div>
+
+                        <div class="w-full h-fit px-2 py-2 bg-red-500">
+                            <a href="talep-form.html" class="text-white">Talep Formu</a>
+                        </div>
+
+                        <div class="w-full h-fit px-2 py-2 bg-red-500 rounded-b-lg">
+                            <a href="iletisim.html" class="text-white">İletişim</p>
+                        </div>
+
+                    </div>
+                </button>
+            </div>
+
         </div>
 
         <!-- Giriş Görseli -->
-        <div class="giris snap-start w-full h-full  flex flex-col justify-center gap-y-3">
+        <div class="giris w-full h-full  flex flex-col justify-center gap-y-10 xl:gap-y-3">
 
-            <div class="flex flex-row items-center justify-center">
-                <p class="text-white text-lg">Link the future</p>
+            <p class="text-white xl:text-4xl text-3xl text-center">Ülker <span class="text-orange-500">Boya</span> <br class="block xl:hidden"> Sanayi ve Ticaret</p>
+
+            <div class="flex flex-row items-center justify-center mt-8">
+                <p class="bg-gray-100/30 p-4 text-gray-600 rounded-2xl w-2/3 xl:w-1/3 text-sm">Müşteri memnuniyetini en üst düzeyde tutup; performansı yüksek, evrensel kalite ve standartta ürünler ve hizmet sunmayı hedefleyen firmamız; hızla değişen ve gelişen talepleri en doğru, en kısa sürede karşılamayı amaçlamaktadır.</p>
             </div>
 
-            <div class="flex flex-row items-center justify-center gap-x-3">
-                <p class="text-white text-4xl  font-semibold ">We're </p>
-                <p class="text-orange-500 text-4xl  font-semibold "> Creative </p>
-                <p class="text-white text-4xl font-semibold"> Web Designer</p>
-            </div>
-
-            <div class="flex flex-row items-center justify-center">
-                <p class="text-gray-600 w-1/3 text-xs">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing. Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, quis.</p>
-            </div>
 
             <div class="flex flex-row items-center justify-center">
                 <a href="#x" class="border border-orange-500 text-white rounded-full bg-orange-500 px-4 py-1 text-xs"> Get Start </a>
@@ -110,10 +145,9 @@
         </div>
 
         <!-- Biz Kimiz? -->
-        <div id="x" class="snap-start w-full h-full flex flex-row items-center justify-center">
-            <div class="w-2/3 h-full flex flex-row items-center">
-                <div class="flex flex-col w-1/2 justify-between gap-y-3">
-                    <!-- <a class="text-xl text-gray-700 font-semibold hover:font-semibold active:underline hover:underline decoration-blue-500 decoration-3 underline-offset-[15px] py-3" href="">Biz Kimiz?</a> -->
+        <div id="x" class="w-full min-h-fit xl:h-full flex flex-row items-center justify-center">
+            <div class="w-full xl:w-2/3 h-full flex flex-col xl:flex-row items-center">
+                <div class="flex flex-col w-1/2 justify-between gap-y-3 py-10 xl:py-0 items-center xl:items-start">
                     <!-- Başlık -->
                     <div class="group flex flex-col gap-y-2 justify-center">
                         <a href="#" class="text-lg text-black hover:font-semibold">Biz Kimiz?</a>
@@ -121,21 +155,26 @@
                             <div class="w-full h-full rounded-full bg-transparent  group-hover:bg-blue-500 "></div>
                         </div>
                     </div>
-                    <p class="text-gray-400 text-xs">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil autem dolor ad repellendus veniam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat, cumque eligendi. Mollitia iure corporis sint.</p>
+                    <p class="text-gray-400 text-xs">Ülker Boya kurulduğu günden günümüze dek doğruluk, dürüstlük ve istikrar politikalarını gözeterek yapmış olduğu başarılı çalışmalarla sektöründe kökleşmiş örnek bir firmadır. <br><br> Ülker Boya değişen dünyayı, yenilikleri, teknolojik
+                        gelişmeleri yakından takip ederek dünyanıza renk katmak için sürekli bir takip içindedir. Dünyanın en iyi boya markalarıyla çalışarak hayatınıza renk katmayı ilke edinmiştir. <br><br> Ülker Boya çevreye duyarlı , çevre politikalarını
+                        göz önünde bulundurarak işlerini sürdüren bir firmadır. <br><br> Hedefimiz ilkeli, kaliteli ve ekonomik çözümün adresi olup; işlerin zamanında bitirilmesi esasına dayanır.
+                    </p>
                     <div class="w-full border-b-2"> </div>
-                    <div class="flex flex-col w-20 mt-3">
-                        <button class="border-2 border-blue-600 text-blue-600 rounded-full py-1 text-xs">Read More</button>
+                    <div class="flex flex-col w-20">
+                        <a href="kurumsal.html" class="border-2 border-blue-600 text-blue-600 rounded-full py-1 text-xs px-2">Read More</a>
                     </div>
                 </div>
-                <div class="w-1/2 h-full py-28 px-20 ">
-                    <div class="absolute ml-5 h-96 w-[30rem] bg-gray-400 rounded-lg"></div>
-                    <div class="absolute mt-5 h-96 w-[30rem] bg-blue-600 rounded-lg"></div>
+
+                <div class="w-1/2 h-full py-28 px-20 hidden xl:block">
+                    <div class="absolute ml-5 h-96 w-[30rem]  bg-gray-400 rounded-lg"></div>
+                    <div class="absolute mt-5 h-96 w-[30rem]  bg-blue-600 rounded-lg"></div>
                 </div>
+
             </div>
         </div>
 
         <!-- Ürünler -->
-        <div class="snap-start w-full h-full flex flex-col items-center justify-center bg-gray-50 gap-y-8 py-5">
+        <div class="snap-start w-full h-fit xl:h-full flex flex-col items-center justify-center bg-gray-50 gap-y-8 py-5">
             <!-- <a class="text-xl text-gray-700 font-semibold hover:font-semibold active:underline hover:underline decoration-orange-500 decoration-3 underline-offset-[15px]" href="">Ürünler</a> -->
             <!-- Başlık -->
             <div class="group flex flex-col gap-y-2">
@@ -144,38 +183,39 @@
                     <div class="w-full h-full rounded-full bg-transparent  group-hover:bg-orange-500 "></div>
                 </div>
             </div>
-            <div class="w-2/3 h-full grid grid-cols-3 items-center justify-center gap-4">
+            <div class="w-2/3 h-full grid  xl:grid-cols-3 items-center justify-center gap-4">
+
                 <div class="shadow-xl hover:shadow-gray-300 w-full h-full border border-gray-200 rounded bg-white text-center flex flex-col justify-end py-3">
-                    <p class="font-semibold">Başlık</p>
-                    <p class="text-gray-500 text-xs">Lorem ipsum dolor sit amet. </p>
+                    <img src="../assets/standox.jpg" alt="">
+                    <p class="font-semibold"> STANDOX</p>
                 </div>
                 <div class="shadow-xl hover:shadow-gray-300 w-full h-full border border-gray-200 rounded bg-white text-center flex flex-col justify-end py-3">
-                    <p class="font-semibold">Başlık</p>
-                    <p class="text-gray-500 text-xs">Lorem ipsum dolor sit amet. </p>
+                    <img src="../assets/duxone.jpg" alt="">
+                    <p class="font-semibold">DUXONE</p>
                 </div>
                 <div class="shadow-xl hover:shadow-gray-300 w-full h-full border border-gray-200 rounded bg-white text-center flex flex-col justify-end py-3">
-                    <p class="font-semibold">Başlık</p>
-                    <p class="text-gray-500 text-xs">Lorem ipsum dolor sit amet. </p>
+                    <img src="../assets/audurra.jpg" alt="">
+                    <p class="font-semibold">AUDURRA</p>
+                </div>
+                <div class="shadow-xl hover:shadow-gray-300 w-full min-h-full h-48 border border-gray-200 rounded bg-white text-center flex flex-col justify-end py-3">
+                    <img src="../assets/mırka.png" alt="" class="">
+                    <p class="font-semibold">MIRKA</p>
                 </div>
                 <div class="shadow-xl hover:shadow-gray-300 w-full h-full border border-gray-200 rounded bg-white text-center flex flex-col justify-end py-3">
-                    <p class="font-semibold">Başlık</p>
-                    <p class="text-gray-500 text-xs">Lorem ipsum dolor sit amet. </p>
+                    <img src="../assets/3m.png" alt="">
+                    <p class="font-semibold">3M</p>
                 </div>
                 <div class="shadow-xl hover:shadow-gray-300 w-full h-full border border-gray-200 rounded bg-white text-center flex flex-col justify-end py-3">
-                    <p class="font-semibold">Başlık</p>
-                    <p class="text-gray-500 text-xs">Lorem ipsum dolor sit amet. </p>
-                </div>
-                <div class="shadow-xl hover:shadow-gray-300 w-full h-full border border-gray-200 rounded bg-white text-center flex flex-col justify-end py-3">
-                    <p class="font-semibold">Başlık</p>
-                    <p class="text-gray-500 text-xs">Lorem ipsum dolor sit amet. </p>
+                    <img src="../assets/filliboya.png" alt="">
+                    <p class="font-semibold">FİLLİ BOYA</p>
                 </div>
             </div>
 
-            <button class=" w-24 text-xs border border-orange-400 rounded-full text-orange-400 items-center  py-1">Read More</button>
+            <a href="urunler.html" class=" w-24 text-xs border border-orange-400 rounded-full text-orange-400 items-center  py-1 px-4">Read More</a>
         </div>
 
-        <div class="w-full h-full">
-            <!-- Galeri -->
+        <!-- Galeri -->
+        <div class="w-full h-fit xl:h-full">
             <div class="w-full h-auto flex flex-col items-center justify-center ">
                 <!-- <a class="text-xl text-gray-700 font-semibold hover:font-semibold active:underline hover:underline decoration-green-500 decoration-3 underline-offset-[15px] mb-3 text-center" href="">Galeri</a> -->
                 <!-- Başlık -->
@@ -188,7 +228,7 @@
             </div>
 
             <!-- Resim -->
-            <div class="w-full h-[80%] grid grid-cols-3 px-16 gap-x-10">
+            <div class="w-full h-[80%] grid grid-cols-1 xl:grid-cols-3 px-16 gap-x-10 gap-y-10">
 
                 <button onclick="resim1.showModal()" class="yesil w-full h-60  group  hover:scale-105 hover:-translate-y-5 ">
               <p class="text-white text-lg font-semibold hidden group-hover:block ">Making Creative Web Designs</p>
@@ -238,46 +278,52 @@
             </form>
         </dialog>
 
+
         <!-- Footer -->
-        <div class="footer h-[28%] bg-logo-secondary flex flex-row py-5 justify-center bg-red-600 mt-3">
+        <div class="footer h-fit xl:h-1/3 bg-red-600 flex flex-col gap-y-10 px-10 xl:px-20 xl:flex-row xl:gap-y-0 py-10 justify-center mt-10 xl:mt-0">
 
-            <div class="w-[25%] flex flex-col">
-                <img class="beyaz-logo w-2/5" src="/assets/logo.png" alt="">
+            <div class="w-full xl:w-2/6 flex flex-row xl:flex-col  gap-x-4">
+                <img class="beyaz-logo w-2/5  xl:w-1/5" src="../assets/logo.png" alt="">
 
+                <h6 class="text-white italic text-[1em] w-3/5">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis illo ab suscipit repellendus asperiores nostrum nam vero eum optio odit?</h6>
             </div>
 
-            <div class="w-1/6 flex flex-col gap-y-5">
-                <h6 class="font-semibold text-white text-lg">Servisler</h6>
 
-                <div class="flex flex-col gap-y-2">
-                    <p class="text-white text-xs">7/24 Destek</p>
-                    <p class="text-white text-xs">Danışmanlarımız</p>
-                    <p class="text-white text-xs">Hakkımızda</p>
-                    <p class="text-white text-xs">İletişim</p>
+            <div class="flex flex-row w-full xl:w-1/3 justify-between xl:justify-start pl-4">
+
+                <div class="w-full flex flex-col gap-y-8">
+                    <h6 class="font-semibold text-white text-2xl">Servisler</h6>
+
+                    <div class="flex flex-col gap-y-2">
+                        <p class="text-white">7/24 Destek</p>
+                        <p class="text-white">Danışmanlarımız</p>
+                        <p class="text-white">Hakkımızda</p>
+                        <p class="text-white">İletişim</p>
+                    </div>
+                </div>
+
+                <div class="w-full flex flex-col gap-y-8">
+                    <h6 class="font-semibold text-white text-2xl">Bağlantılar </h6>
+
+                    <div class="flex flex-col gap-y-2">
+                        <p class="text-white">Anasayfa</p>
+                        <p class="text-white">Kurumsal</p>
+                        <p class="text-white">Ürünler</p>
+                        <p class="text-white">Talep Formu</p>
+                        <p class="text-white">İletişim</p>
+                    </div>
                 </div>
             </div>
 
-            <div class="w-1/6 flex flex-col gap-y-5">
-                <h6 class="font-semibold text-white text-lg">Bağlantılar </h6>
+            <div class="w-full xl:w-1/5 flex flex-col gap-y-8">
+                <h6 class="font-semibold text-white text-2xl">Subscribe</h6>
 
-                <div class="flex flex-col gap-y-2">
-                    <p class="text-white text-xs">Anasayfa</p>
-                    <p class="text-white text-xs">Hakkımzıda</p>
-                    <p class="text-white text-xs">Hizmetler</p>
-                    <p class="text-white text-xs">Ürünler</p>
-                    <p class="text-white text-xs">İletişim</p>
-                </div>
-            </div>
+                <div class="flex flex-col gap-y-2 text-white">
+                    <input type="text" placeholder="Name" class="h-10 w-full px-2 bg-transparent rounded-2xl border-2 outline-none focus:bg-gray-100/50">
 
-            <div class="w-1/5 flex flex-col gap-y-5">
-                <h6 class="font-semibold text-white text-lg">Subscribe</h6>
+                    <input type="text" placeholder="Mail" class="h-10 w-full px-2 bg-transparent rounded-2xl border-2 outline-none focus:bg-gray-100/50">
 
-                <div class="flex flex-col gap-y-2">
-                    <input type="text" value="Name" class="h-10 w-full px-2 bg-transparent rounded-2xl border-2 border-logo-primary text-xs text-white focus:bg-white/30 outline-none	">
-
-                    <input type="text" value="Mail" class="h-10 w-full px-2 bg-transparent rounded-2xl border-2 border-logo-primary text-xs text-white focus:bg-white/30 outline-none ">
-
-                    <button class="ml-auto w-32 px-4 py-1 border-2 text-white text-base bg-logo-primary rounded-2xl transition duration-300 hover:bg-white/30">
+                    <button class="border-2 border-white ml-auto w-32 px-4 py-1 text-white text-base bg-logo-primary rounded-xl transition duration-300 hover:bg-white/30">
                     Gönder
                 </button>
                 </div>
@@ -285,12 +331,7 @@
 
         </div>
 
-
-
-
     </div>
-
-
 
 </body>
 
