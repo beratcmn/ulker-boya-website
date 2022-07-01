@@ -2,28 +2,101 @@
 @tailwind components;
 @tailwind utilities;
 .giris {
-    background-image: url("../assets/young-designer.jpg");
+    background-image: url("/assets/giris2.jpg");
     background-position: center;
     background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.yesil {
-    background: url("../assets/working-laptop.jpg");
+.iletisim {
+    background-image: url("/assets/iletisimm.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.kurumsal {
+    background-image: url("/assets/kurumsal.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.talep-form {
+    background-image: url("/assets/talep.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.urunler {
+    background-image: url("/assets/urunler.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.yesil1 {
+    background: url("/assets/galeri1.jpeg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     transition: all 0.5s;
 }
 
-.yesil:hover {
-    background: linear-gradient(0deg, rgba(0, 97, 52, 0.8), rgba(0, 97, 52, 0.8)), url("../assets/working-laptop.jpg");
+.yesil2 {
+    background: url("/assets/galeri2.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: all 0.5s;
+}
+
+.yesil3 {
+    background: url("/assets/galeri3.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: all 0.5s;
+}
+
+.yesil1:hover {
+    background: linear-gradient(0deg, rgba(0, 97, 52, 0.8), rgba(0, 97, 52, 0.8)), url("/assets/galeri1.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.yesil2:hover {
+    background: linear-gradient(0deg, rgba(0, 97, 52, 0.8), rgba(0, 97, 52, 0.8)), url("/assets/galeri2.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.yesil3:hover {
+    background: linear-gradient(0deg, rgba(0, 97, 52, 0.8), rgba(0, 97, 52, 0.8)), url("/assets/galeri3.jpeg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 #resim1 {
-    background: url("../assets/working-laptop.jpg");
+    background: url("/assets/galeri1.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#resim2 {
+    background: url("/assets/galeri2.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#resim3 {
+    background: url("/assets/galeri3.jpeg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -33,10 +106,18 @@ textarea {
     resize: none;
 }
 
+textarea::placeholder {
+    color: gray;
+}
+
+input::placeholder {
+    color: gray;
+}
+
 .beyaz-logo {
     filter: brightness(0) invert(1);
 }
 
-input::placeholder {
+#footer1::placeholder {
     color: white;
 }
