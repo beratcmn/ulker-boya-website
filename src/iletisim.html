@@ -37,8 +37,8 @@
 
                 <!-- resim -->
                 <div class="flex flex-row justify-center">
-                    <img src="../assets/logo.png" alt="" class="h-28">
-                    <img src="/assets/logo2.png" alt="" class="h-28">
+                    <a href="index.html"><img src="../assets/logo.png" alt="" class="h-28"></a>
+                    <a href="index.html"><img src="/assets/logo2.png" alt="" class="h-28"></a>
                 </div>
 
                 <!-- liste -->
@@ -136,7 +136,7 @@
 
         <!-- Harita -->
         <div id="main-map" class="w-full h-[345px]">
-            <iframe class="w-full h-full" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12057.98922463857!2d29.31442!3d40.9267668!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x234962a227e1b90d!2sYakatechPro%20Bilgi%20Sistemleri!5e0!3m2!1str!2str!4v1655212271076!5m2!1str!2str"
+            <iframe class="w-full h-full" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.721094845891!2d29.964323499999995!3d40.74616219999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cb45235cf745cf%3A0x3b21f41339fe6cd2!2s%C3%9Clker%20Boya!5e0!3m2!1str!2str!4v1657194611232!5m2!1str!2str"
                 style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
 
@@ -308,13 +308,28 @@
                 <div class="w-full flex flex-col gap-y-8">
                     <h6 class="font-semibold text-white text-2xl">Bize Ulaşın</h6>
 
-                    <div class="flex flex-col gap-y-2">
-                        <i class="fa-solid fa-location-dot text-white py-1"></i>
-                        <p class="text-white">İzmit Sanayi Sitesi 413 Blok. No : 2 İzmit / KOCAELİ </p>
-                        <i class="fa-solid fa-phone text-white py-1"></i>
-                        <p class="text-white"> 0262 335 23 87 - 0262 335 17 65</p>
-                        <i class="fa-solid fa-envelope text-white py-1"></i>
-                        <p class="text-white">info@ulkerboya.com.tr</p>
+                    <div class="flex flex-col gap-y-8">
+                        <div class="flex flex-row items-center gap-x-3">
+                            <i class="fa-solid fa-location-dot text-white py-1"></i>
+                            <div class="flex flex-col gap-y-2">
+                                <a href="iletisim.html">
+                                    <p class="text-white">İzmit Sanayi Sitesi 413 Blok. No : 2</p>
+                                    <p class="text-white"> İzmit / KOCAELİ </p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="flex flex-row gap-x-3">
+                            <i class="fa-solid fa-phone text-white py-1"></i>
+                            <a href="tel:+90262 335 23 87" class="text-white">0262 335 23 87</a>
+                            <p class="text-white">-</p>
+                            <a href="tel:+90262 335 17 65" class="text-white">0262 335 17 65</a>
+                            <!-- <p class="text-white"> 0262 335 23 87 - 0262 335 17 65</p> -->
+                        </div>
+                        <div class="flex flex-row gap-x-3">
+                            <i class="fa-solid fa-envelope text-white py-1"></i>
+                            <a href="mailto:info@ulkerboya.com.tr" class="text-white">info@ulkerboya.com.tr</a>
+                            <!-- <p class="text-white">info@ulkerboya.com.tr</p> -->
+                        </div>
                     </div>
                 </div>
             </div>

@@ -11,6 +11,12 @@
     <title>Ülker Boya</title>
 </head>
 
+<r></r>
+<r></r>
+<r></r>
+<r></r>
+<r></r>
+
 <body>
 
     <div class="h-screen w-full">
@@ -40,9 +46,9 @@
             <div class="xl:w-full w-2/3 xl:pl-28 pl-0 pr-0 xl:pr-28 h-full hidden xl:flex flex-row items-center justify-between">
 
                 <!-- resim -->
-                <div class="flex flex-row  justify-start">
-                    <img src="../assets/logo.png" alt="" class="h-28">
-                    <img src="/assets/logo2.png" alt="" class="h-28">
+                <div class="flex flex-row justify-center">
+                    <a href="index.html"><img src="../assets/logo.png" alt="" class="h-28"></a>
+                    <a href="index.html"><img src="/assets/logo2.png" alt="" class="h-28"></a>
                 </div>
 
                 <!-- liste -->
@@ -166,7 +172,9 @@
 
                 <div class="w-1/2 h-full py-52 px-20 hidden xl:block">
                     <div class="absolute ml-5 h-96 w-[30rem]  bg-gray-400 rounded-lg"></div>
-                    <div class="absolute mt-5 h-96 w-[30rem]  bg-blue-600 rounded-lg"></div>
+                    <div class="absolute mt-5 h-96 w-[30rem]  bg-white rounded-lg">
+                        <img src="/assets/logo.png" alt="">
+                    </div>
                 </div>
 
             </div>
@@ -242,9 +250,10 @@
 
         </div>
 
-        <dialog id="resim1" class="h-screen w-screen rounded-xl z-20">
+        <dialog id="rafekle" class="h-screen w-screen rounded-xl z-20">
             <form method="dialog" class="w-full h-full flex">
-                <button class="mb-auto ml-auto w-10 h-10 border-2 border-white  rounded-xl text-white text-2xl hover:bg-white hover:text-black">
+
+                <button class="mb-auto ml-auto w-10 h-10 border-white  rounded-xl text-white text-2xl hover:bg-white hover:text-black">
                     X
                 </button>
             </form>
@@ -299,13 +308,28 @@
                 <div class="w-full flex flex-col gap-y-8">
                     <h6 class="font-semibold text-white text-2xl">Bize Ulaşın</h6>
 
-                    <div class="flex flex-col gap-y-2">
-                        <i class="fa-solid fa-location-dot text-white py-1"></i>
-                        <p class="text-white">İzmit Sanayi Sitesi 413 Blok. No : 2 İzmit / KOCAELİ </p>
-                        <i class="fa-solid fa-phone text-white py-1"></i>
-                        <p class="text-white"> 0262 335 23 87 - 0262 335 17 65</p>
-                        <i class="fa-solid fa-envelope text-white py-1"></i>
-                        <p class="text-white">info@ulkerboya.com.tr</p>
+                    <div class="flex flex-col gap-y-8">
+                        <div class="flex flex-row items-center gap-x-3">
+                            <i class="fa-solid fa-location-dot text-white py-1"></i>
+                            <div class="flex flex-col gap-y-2">
+                                <a href="iletisim.html">
+                                    <p class="text-white">İzmit Sanayi Sitesi 413 Blok. No : 2</p>
+                                    <p class="text-white"> İzmit / KOCAELİ </p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="flex flex-row gap-x-3">
+                            <i class="fa-solid fa-phone text-white py-1"></i>
+                            <a href="tel:+90262 335 23 87" class="text-white">0262 335 23 87</a>
+                            <p class="text-white">-</p>
+                            <a href="tel:+90262 335 17 65" class="text-white">0262 335 17 65</a>
+                            <!-- <p class="text-white"> 0262 335 23 87 - 0262 335 17 65</p> -->
+                        </div>
+                        <div class="flex flex-row gap-x-3">
+                            <i class="fa-solid fa-envelope text-white py-1"></i>
+                            <a href="mailto:info@ulkerboya.com.tr" class="text-white">info@ulkerboya.com.tr</a>
+                            <!-- <p class="text-white">info@ulkerboya.com.tr</p> -->
+                        </div>
                     </div>
                 </div>
             </div>
