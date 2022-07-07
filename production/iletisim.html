@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en" class="font-sans scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <title>İletişim</title>
+</head>
+
+<body>
+    <div class="h-screen w-full ">
+
+        <!-- Kırmızı Banner -->
+        <div class="w-full h-8 bg-red-600 flex flex-row items-center justify-center px-10 xl:px-0">
+            <div class="w-full xl:w-full flex flex-row items-center xl:justify-end pr-0 xl:pr-28">
+                <div class="flex flex-row gap-x-5">
+
+                    <div class="flex flex-row justify-center items-center gap-x-3">
+                        <i class="fa-solid fa-envelope text-white text-xs"></i>
+                        <p class="text-white text-[0.65rem]">E-mail: info@ulkerboya.com.tr</p>
+                    </div>
+
+                    <div class="flex flex-row justify-center items-center gap-x-3">
+                        <i class="fa-solid fa-phone text-white text-xs"></i>
+                        <p class="text-white text-[0.65rem]">Bizi Arayın: +90 262 335 23 87</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navbar -->
+        <div class="w-full h-28 flex flex-row items-center justify-center ">
+            <div class="xl:w-full w-2/3 xl:pl-28 pl-0 pr-0 xl:pr-28 h-full hidden xl:flex flex-row items-center justify-between">
+
+                <!-- resim -->
+                <div class="flex flex-row justify-center">
+                    <img src="./assets/logo.png" alt="" class="h-28">
+                    <img src="/assets/logo2.png" alt="" class="h-28">
+                </div>
+
+                <!-- liste -->
+                <div class="flex flex-row gap-x-8">
+                    <!-- <a href="index.html" class="text-base text-gray-700 hover:font-semibold active:underline hover:underline decoration-red-600 decoration-3 underline-offset-[15px]">Anasayfa</a> -->
+                    <!-- Başlık -->
+                    <div class="group flex flex-col gap-y-2">
+                        <a href="index.html" class="text-sm text-black hover:font-semibold">Anasayfa</a>
+                        <div class="w-[90%] h-[1px] pl-2 pr-1">
+                            <div class="w-full h-full rounded-full bg-transparent  group-hover:bg-orange-400 "></div>
+                        </div>
+                    </div>
+                    <!-- <a href="kurumsal.html" class="text-base text-gray-700 font-semibold underline decoration-orange-400 decoration-3 underline-offset-[15px]">Kurumsal</a> -->
+                    <!-- Başlık -->
+                    <div class="group flex flex-col gap-y-2">
+                        <a href="kurumsal.html" class="text-sm text-black hover:font-semibold">Kurumsal</a>
+                        <div class="w-[90%] h-[1px] pl-2 ">
+                            <div class="w-full h-full rounded-full bg-transparent  group-hover:bg-red-600 "></div>
+                        </div>
+                    </div>
+                    <!-- <a href="urunler.html" class="text-base text-gray-700 hover:font-semibold active:underline hover:underline decoration-green-500 decoration-3 underline-offset-[15px]">Ürünler</a> -->
+                    <!-- Başlık -->
+                    <div class="group flex flex-col gap-y-2">
+                        <a href="urunler.html" class="text-sm text-black hover:font-semibold">Ürünler</a>
+                        <div class="w-[90%] h-[1px] pl-2 ">
+                            <div class="w-full h-full rounded-full bg-transparent  group-hover:bg-green-500 "></div>
+                        </div>
+                    </div>
+                    <!-- <a href="talep-form.html" class="text-base text-gray-700 font-semibold underline decoration-orange-400 decoration-3 underline-offset-[15px]">Talep Formu</a> -->
+                    <!-- Başlık -->
+                    <div class="group flex flex-col gap-y-2">
+                        <a href="talep-form.html" class="text-sm text-black hover:font-semibold">Talep Formu</a>
+                        <div class="w-[90%] h-[1px] pl-2 ">
+                            <div class="w-full h-full rounded-full bg-transparent  group-hover:bg-orange-600 "></div>
+                        </div>
+                    </div>
+                    <!-- <a href="iletisim.html" class="text-base text-gray-700 font-semibold underline decoration-orange-400 decoration-3 underline-offset-[15px]">İletişim</a> -->
+                    <!-- Başlık -->
+                    <div class="group flex flex-col gap-y-2">
+                        <a href="iletisim.html" class="text-sm text-black font-semibold">İletişim</a>
+                        <div class="w-[90%] h-[1px] pl-2 ">
+                            <div class="w-full h-full rounded-full bg-transparent  bg-blue-500 "></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Mobile Navbar -->
+            <div class="
+            mobile-navbar flex flex-row w-full h-fit items-center px-4 py-6
+            xl:hidden
+            ">
+
+                <img class="h-20 " src="./assets/logo.png" alt="">
+                <img class="h-20 " src="/assets/logo2.png" alt="">
+
+                <button class="mt-5 flex flex-col items-end justify-start gap-y-2 h-11 w-11 ml-auto rounded-xl group">
+                    <span class="h-[3px] w-2/3 bg-red-500 rounded-full"></span>
+                    <span class="h-[3px] w-2/3 bg-red-500 rounded-full"></span>
+                    <span class="h-[3px] w-2/3 bg-red-500 rounded-full"></span>
+
+                    <div class="w-32 mt-10 h-fit absolute hidden group-hover:flex flex-col">
+                        <div class="w-full h-fit px-2 py-2 bg-red-500 rounded-t-lg">
+                            <a href="index.html" class="text-white">Anasayfa</a>
+                        </div>
+
+                        <div class="w-full h-fit px-2 py-2 bg-red-500">
+                            <a href="kurumsal.html" class="text-white">Kurumsal</a>
+                        </div>
+
+                        <div class="w-full h-fit px-2 py-2 bg-red-500">
+                            <a href="urunler.html" class="text-white">Ürünler</a>
+                        </div>
+
+                        <div class="w-full h-fit px-2 py-2 bg-red-500">
+                            <a href="talep-form.html" class="text-white">Talep Formu</a>
+                        </div>
+
+                        <div class="w-full h-fit px-2 py-2 bg-red-500 rounded-b-lg">
+                            <a href="iletisim.html" class="text-white">İletişim</a>
+                        </div>
+
+                    </div>
+                </button>
+            </div>
+        </div>
+
+        <!-- Giriş Görseli -->
+        <div class="iletisim w-full h-72 flex flex-col justify-center">/
+            <div class="flex flex-row items-center justify-center">
+                <p class="text-white text-4xl">İletişim</p>
+            </div>
+        </div>
+
+        <!-- Harita -->
+        <div id="main-map" class="w-full h-[345px]">
+            <iframe class="w-full h-full" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12057.98922463857!2d29.31442!3d40.9267668!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x234962a227e1b90d!2sYakatechPro%20Bilgi%20Sistemleri!5e0!3m2!1str!2str!4v1655212271076!5m2!1str!2str"
+                style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <div id="k-merkez-map" class="hidden w-full h-[345px]">
+            <iframe class="w-full h-full" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.721094845891!2d29.964323499999995!3d40.74616219999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cb45235cf745cf%3A0x3b21f41339fe6cd2!2s%C3%9Clker%20Boya!5e0!3m2!1str!2str!4v1655453913302!5m2!1str!2str"
+                style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        </div>
+
+        <div id="b-merkez-map" class="hidden w-full h-[345px]">
+            <iframe class="w-full h-full" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3047.0108092502014!2d28.9439463!3d40.2088225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14ca114fb4b860b1%3A0xcc0392339eb0d5e4!2s%C3%9Clker%20Boya-Bursa%20%C5%9Eube!5e0!3m2!1str!2str!4v1655454337659!5m2!1str!2str"
+                style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        </div>
+
+        <div id="k-sanayi-map" class="hidden w-full h-[345px]">
+            <iframe class="w-full h-full" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.7102136834665!2d29.9476598!3d40.746401600000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cb456bd5faa8e9%3A0x1af71b9d1e66e87e!2s%C3%9Clker%20Boya!5e0!3m2!1str!2str!4v1655454584263!5m2!1str!2str"
+                style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+
+        <div id="d-merkez-map" class="hidden w-full h-[345px]">
+            <iframe class="h-full w-full" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3017.8568224863143!2d31.1218661!3d40.8530672!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x409d9f8e0ac44f11%3A0x2e2d74efb8235a01!2s2587.%20Sk.%20No%3A23!5e0!3m2!1str!2str!4v1655454676791!5m2!1str!2str"
+                style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <!-- Adres - Tel - E-mail -->
+        <div class="w-full xl:h-60 h-auto flex xl:flex-row flex-col justify-center items-center xl:gap-y-0 gap-y-20">
+
+            <button id="k-merkez" class="w-1/2 h-full flex flex-col items-center justify-center  ">
+                <i class="fa-solid fa-location-dot text-orange-500 xl:py-3 py-1"></i>
+                <a class="text-xs px-2 text-black xl:font-normal font-semibold  hover:font-semibold" target="_blank" href="https://goo.gl/maps/dctu9DQsg2oYCLDs7">KOCAELİ MERKEZ</a>
+                <p class=" text-xs py-1 xl:py-3">Karadenizliler Mah. Ordulu Cad. no: 51/1 </p>
+                <p class=" text-xs ">Başiskele / KOCAELİ</p>
+            </button>
+
+            <button id="b-merkez" class="w-1/2 h-full flex flex-col items-center justify-center   ">
+                <i class="fa-solid fa-location-dot text-orange-500 xl:py-3 py-1"></i>
+                <a class="text-xs px-2 text-black xl:font-normal font-semibold hover:font-semibold" target="_blank" href="https://goo.gl/maps/UnqUpR5vQrSfEGSz8">BURSA MERKEZ</a>
+                <p class=" text-xs py-1 xl:py-3">Üçevler Mah.Küçük Sanayi Sitesi 6 Blok 11 Sokak No:24</p>
+                <p class=" text-xs">Nilüfer / BURSA</p>
+            </button>
+
+            <button id="k-sanayi" class="w-1/2 h-full flex flex-col items-center justify-center  ">
+                <i class="fa-solid fa-location-dot text-orange-500 xl:py-3 py-1"></i>
+                <a class="text-xs px-2 text-black xl:font-normal font-semibold hover:font-semibold" target="_blank" href="https://goo.gl/maps/DjrfJMSETiJwGadx5">KOCAELİ SANAYİ</a>
+                <p class=" text-xs py-1 xl:py-3">Sanayi Mah. İzmit Sanayi Sitesi 413 Blok No:2 </p>
+                <p class=" text-xs">İzmit / KOCAELİ</p>
+            </button>
+
+            <button id="d-merkez" class="w-1/2 h-full flex flex-col items-center justify-center  ">
+                <i class="fa-solid fa-location-dot text-orange-500 xl:py-3 py-1"></i>
+                <a class="text-xs px-2 text-black xl:font-normal font-semibold hover:font-semibold" target="_blank" href="https://goo.gl/maps/KsoXahMNMte694UX9">DÜZCE MERKEZ</a>
+                <p class=" text-xs py-1 xl:py-3">Akınlar Mah. Küçük Melen Sanayi Sitesi. 2587 Sk. No.23</p>
+                <p class=" text-xs">Merkez/Düzce</p>
+            </button>
+        </div>
+        <div class="w-full xl:h-80 h-auto flex flex-col items-center xl:justify-center justify-start ">
+
+            <div class="xl:w-1/2 w-fit xl:h-40 h-auto flex flex-row items-center justify-center gap-x-28 xl:gap-x-0">
+
+                <div class="xl:w-1/3 w-1/2 h-full flex flex-col items-center justify-center ">
+                    <i class="fa-solid fa-phone text-orange-500  py-3"></i>
+                    <p class="text-xs py-1">+90 533 094 73 95</p>
+                    <p class=" text-xs py-1">+90 224 346 05 55</p>
+                </div>
+
+                <div class="xl:w-1/3 w-1/2 h-full flex flex-col items-center justify-center">
+                    <i class="fa-solid fa-envelope text-orange-500 py-3"></i>
+                    <p class="text-xs py-1">info@ulkerboya.com.tr</p>
+                    <p class="text-xs py-1">satis@ulkerboya.com.tr</p>
+                </div>
+
+            </div>
+
+        </div>
+
+        <script>
+            document.getElementById("k-merkez")
+                .addEventListener("click", function() {
+                    document.getElementById("main-map").hidden = true;
+                    document.getElementById("k-merkez-map").classList.remove("hidden");
+
+                    document.getElementById("b-merkez-map").classList.add("hidden");
+                    document.getElementById("k-sanayi-map").classList.add("hidden");
+                    document.getElementById("d-merkez-map").classList.add("hidden");
+                }, false);
+
+            document.getElementById("b-merkez")
+                .addEventListener("click", function() {
+                    document.getElementById("main-map").hidden = true;
+                    document.getElementById("b-merkez-map").classList.remove("hidden");
+
+                    document.getElementById("k-merkez-map").classList.add("hidden");
+                    document.getElementById("k-sanayi-map").classList.add("hidden");
+                    document.getElementById("d-merkez-map").classList.add("hidden");
+                }, false);
+
+            document.getElementById("k-sanayi")
+                .addEventListener("click", function() {
+                    document.getElementById("main-map").hidden = true;
+                    document.getElementById("k-sanayi-map").classList.remove("hidden");
+
+                    document.getElementById("b-merkez-map").classList.add("hidden");
+                    document.getElementById("k-merkez-map").classList.add("hidden");
+                    document.getElementById("d-merkez-map").classList.add("hidden");
+                }, false);
+
+            document.getElementById("d-merkez")
+                .addEventListener("click", function() {
+                    document.getElementById("main-map").hidden = true;
+                    document.getElementById("d-merkez-map").classList.remove("hidden");
+
+                    document.getElementById("b-merkez-map").classList.add("hidden");
+                    document.getElementById("k-merkez-map").classList.add("hidden");
+                    document.getElementById("k-sanayi-map").classList.add("hidden");
+                }, false);
+        </script>
+
+        <!-- FORMS -->
+        <div class="w-full h-96 flex flex-col items-center text-xs xl:mt-3 mt-16">
+            <div class="xl:w-1/2 w-fit h-auto flex flex-row items center justify center gap-x-5 mt-5">
+                <input type="text" placeholder="First Name*" class="w-1/2 h-10 border-2 border-gray-300 px-2 outline-none">
+                <input type="text" placeholder="Company Name*" class="w-1/2 h-10 border-2 border-gray-300 px-2 outline-none">
+            </div>
+            <div class="xl:w-1/2 w-fit h-auto flex flex-row  gap-x-5 mt-5">
+                <input type="text" placeholder="Last Name*" class="w-1/2 h-10 border-2 border-gray-300 px-2  outline-none">
+                <input type="text" placeholder="E-mail*" class="w-1/2 h-10 border-2 border-gray-300 px-2  outline-none">
+            </div>
+            <div class="xl:w-1/2 w-full h-auto flex flex-row xl:px-0 px-9 gap-x-5 mt-5">
+                <!-- <input type="text" placeholder="Message*" class="w-full h-40 border-2 border-gray-300"> -->
+                <textarea placeholder="Message*" class="w-full h-40 border-2 border-gray-300 px-2 py-2 outline-none"></textarea>
+            </div>
+            <div class="mb-5">
+                <button class="border-2 border-blue-500 rounded-xl text-blue-500 font-semibold px-5 py-1 mt-5 shadow shadow-gray-400">Send</button>
+            </div>
+        </div>
+
+
+        <!-- Footer -->
+        <div class="footer h-fit xl:h-1/3 bg-red-600 flex flex-col gap-y-10 px-10 xl:px-20 xl:flex-row xl:gap-y-0 py-10 justify-center mt-10 xl:mt-0">
+
+            <div class="w-full xl:w-1/4 flex flex-row justify-center   xl:flex-col  gap-x-4">
+                <img class="beyaz-logo w-3/5  xl:w-[80%]" src="./assets/logo.png" alt="">
+            </div>
+
+
+            <div class="flex flex-row w-fit xl:w-1/6 justify-between xl:justify-start pl-2 xl:gap-x-0 gap-x-8">
+
+                <div class="w-fit flex flex-col gap-y-9">
+                    <h6 class="font-semibold text-white text-2xl">Bağlantılar </h6>
+
+                    <div class="flex flex-col gap-y-4">
+                        <p class="text-white"><a href="index.html">Anasayfa</a>
+                        </p>
+                        <p class="text-white"><a href="kurumsal.html">Kurumsal</a>
+                        </p>
+                        <p class="text-white"><a href="urunler.html">Ürünler</a>
+                        </p>
+                        <p class="text-white"><a href="talep-form.html">Talep Formu</a>
+                        </p>
+                        <p class="text-white"><a href="iletisim.html">İletişim</a></p>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="flex flex-row w-full xl:w-1/4 justify-between xl:justify-start pl-2 xl:gap-x-0 gap-x-8">
+                <div class="w-full flex flex-col gap-y-8">
+                    <h6 class="font-semibold text-white text-2xl">Bize Ulaşın</h6>
+
+                    <div class="flex flex-col gap-y-2">
+                        <i class="fa-solid fa-location-dot text-white py-1"></i>
+                        <p class="text-white">İzmit Sanayi Sitesi 413 Blok. No : 2 İzmit / KOCAELİ </p>
+                        <i class="fa-solid fa-phone text-white py-1"></i>
+                        <p class="text-white"> 0262 335 23 87 - 0262 335 17 65</p>
+                        <i class="fa-solid fa-envelope text-white py-1"></i>
+                        <p class="text-white">info@ulkerboya.com.tr</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-full xl:w-1/4 flex flex-col gap-y-8">
+                <h6 class="font-semibold text-white text-2xl">Subscribe</h6>
+
+                <div class="flex flex-col gap-y-2 text-white">
+                    <input type="text" placeholder="Name" id="footer1" class="h-10 w-full px-2 bg-transparent rounded-2xl border-2 outline-none focus:bg-gray-100/50">
+
+                    <input type="text" placeholder="Mail" id="footer1" class="h-10 w-full px-2 bg-transparent rounded-2xl border-2 outline-none focus:bg-gray-100/50">
+
+                    <button class="border-2 border-white ml-auto w-32 px-4 py-1 text-white text-base bg-logo-primary rounded-xl transition duration-300 hover:bg-white/30">
+                    Gönder
+                </button>
+                </div>
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+
+</body>
+
+</html>
